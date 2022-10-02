@@ -1,1 +1,61 @@
 /* Desenvolva a estilização da sua página aqui */
+header{
+    width: 400px;
+    max-width: 100%;
+    background-color: var(--color-grey-5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 130px;
+    padding: 1.5rem 1.2rem 0.5rem;
+}
+
+.btn-registro-valor{
+    width: 343px;
+    max-width: 50%;
+    font-size: var (--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    height: 30px;
+    background-color: var(--color-brand-1);
+    padding: 0 14px;
+    margin: 0.5rem 1rem 1.5rem 1rem;
+    color: var(--fixed-white);
+    border-radius: var(--radius-1);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-registro-valor:hover{
+    opacity: 70%;
+}
+
+h2{
+    font-size: var(--font-size-2);
+    margin: 28px 0;
+}
+
+@media (min-width: 400px){
+    header{
+        width: 1455px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        height: 109px;
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+    .logo{
+        width: 180px;
+    }
+
+    .btn-registro-valor{
+        width: 164px;
+        padding: 0 14px;
+        margin: 20px;
+    }
+}

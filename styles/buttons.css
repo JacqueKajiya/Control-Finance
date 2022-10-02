@@ -1,0 +1,24 @@
+.btn-financa button{
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    color: var(--color-grey-2);
+    border: none;
+    padding: 7px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-financa button:hover, .btn_entrada:hover, .btn_saida:hover{
+    color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+    padding: 7px 14px;
+    border-radius: 8px;
+    transition: 0,5s ease;
+}
+
+@media (min-width: 400px) {
+    .btn-financa button{
+    
+    }
+}

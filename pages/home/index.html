@@ -9,11 +9,49 @@
     <meta name="description" content="Control Finance - Seu controle financeiro">
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/listaValores.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+
 </head>
 <body>
-    <main id="app"></main>
+
+    <header>
+        <img src="/assets/Control Finance.png" alt="Logo" class="logo">
+        <button class = "btn-registro-valor" id="btn_registrar_valor">Registrar novo valor</button>
+    </header>
+
+    <main id="app" class="container">
+
+        <section class = "topo-lista">
+            <h2>Resumo Financeiro</h2>
+
+            <section class="btn-financa">
+                <button id="btn_todos" class="btn_categoria">Todos</button>
+                <button id="btn_entradas"class="btn_categoria">Entradas</button>
+                <button id="btn_saidas" class="btn_categoria">Saidas</button>
+            </section>
+        </section>
+
+        <div class="valorTotal">
+            <h4>Soma dos Valores</h4>
+            <p id="valorTotal">0</p>
+        </div>
+
+        <div class="sem_valor">
+            <h4>Nenhum valor cadastrado</h4>
+            <p>Registrar novo valor</p>
+        </div>
+
+        <ul class="valores">
+            
+        </ul>
+
+    </main>
+
+    
+    <script src="/scripts/utils.js"></script>
+    <script src="./valuesData.js"></script>
     <script src="/scripts/modal.js"></script>
-    <script src="valuesData.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>

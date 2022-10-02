@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -50,9 +51,10 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 400px) {
   .container {
+    width: 688px;
     max-width: 43rem;
-    margin: 0 1rem;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,190 @@
+.modal_wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 343px;
+    max-width: 100%;
+    font-family: var(--font-family-1);
+    height: fit-content;
+    background-color: var(--fixed-white);
+    border-radius: 8px;
+    padding: 24px;
+    transition: 1s ease;
+}
+
+.modal_cabecalho{
+    font-size: var(--font-size-2);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeBtn{
+    cursor: pointer;
+}
+
+.modal_descricao{
+    font-size: var(--font-size-3);
+    line-height: 150%;
+    color: var(--color-grey-2);
+    margin: 1.5rem 0;
+}
+
+.modal_label_input{
+    font-size: var(--font-size-3);
+    font-weight: 500;
+    color: var(--color-grey-1);
+}   
+
+.modal_valor{
+    width: 295px;
+    max-width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: 8px;
+}
+
+.titulo_tipo_valor{
+    font-size: var(--font-size-3);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.div_tipo_valor{
+    width: 250px;
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.btn_entrada, .btn_saida{
+    display: none;
+}
+
+.label_tipo_valor{
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    border: 1.5px solid var(--color-grey-5);
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 14px;
+}
+
+.label_tipo_valor:hover{
+    color: var(--color-grey-1);
+    background: var(--color-grey-4);
+}
+
+input[type="radio"]:checked + label{
+    border-color: var(--color-brand-2);
+}
+
+.modal_saida{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn_cancelar{
+    width: 139px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    color:var(--color-grey-2);
+    background-color: var(--color-grey-5);
+    border: 1.5px solid var(--color-grey-4);
+}
+
+.btn_cancelar:hover{
+    background-color: var(--color-grey-4);
+    font-weight: 700;
+}
+
+.btn_valor{
+    width: 139px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    color:var(--fixed-white);
+    border: 1.5px solid var(--color-brand-1);
+    background-color: var(--color-brand-1);
+}
+
+.btn_valor:hover{
+    background-color: var(--color-brand-2)
+}
+
+.show_modal{
+    display: flex;
+}
+
+.modal_wrapper .modal{
+    animation: efeito_modal 1s ease;
+}
+
+@keyframes efeito_modal{
+    0%{
+        opacity: 0;
+        transform: translateY(-60%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 400px) {
+
+    .modal{
+        width: 428px;
+        height:fit-content;
+    }
+
+    .modal_inserir_valor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal label{
+        font-weight: 600;
+    }
+
+    .modal_valor{
+        width: 100%;
+
+    }
+    .tipo_valor{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .btn_tipo_valor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .modal_saida{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
