@@ -28,7 +28,7 @@ function createModal (){
     h3.innerText="Registro de Valor"
 
     closeBtn.classList.add("closeBtn")
-    closeBtn.src = "/assets/Close.png"
+    closeBtn.src = "../../assets/Close.png"
     closeBtn.alt = "botao fechar"
 
     paragrafo.classList.add("modal_descricao")
