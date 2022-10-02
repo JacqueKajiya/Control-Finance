@@ -51,7 +51,7 @@ function renderValues (valores){
     }
 
     const removerValor = document.createElement("img")
-    removerValor.src = "/assets/lixeira-escuro.png"
+    removerValor.src = "../../assets/lixeira-escuro.png"
     removerValor.alt = "botao de remover"
     removerValor.classList.add("item-remover")
   
